@@ -11,4 +11,6 @@ cp .env.example .env
 
 nano .env 
 
+sudo  docker-compose up -d
+
 docker-compose down && docker-compose rm && docker-compose build && docker-compose up -d
