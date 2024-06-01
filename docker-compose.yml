@@ -1,8 +1,8 @@
 version: "3"
 
 services:
-  python:
+  twilio_to_telegram:
     build: .
-    ports:
-      - 8080:8080
     env_file: .env
+    ports:
+      - "${WEB_HOOK_PORT}:${WEB_HOOK_PORT}"
